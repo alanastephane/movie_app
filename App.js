@@ -74,6 +74,8 @@ const App = () => {
 {location && (
         <View>
           <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Sua Localização</Text>
+          <Text>Latitude: {location.coords.latitude}</Text>
+          <Text>Longitude: {location.coords.longitude}</Text>
           <MapView
             style={{ width: '100%', height: 200 }}
             initialRegion={{
